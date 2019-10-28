@@ -91,7 +91,7 @@ body {
   display: block;
   visibility: hidden;
   transition: top 0.3s;
-  z-index: 1;
+  z-index: 999 !important;
   box-shadow: 10px 2px 2px 1px rgba(0, 0, 0, 0.25);
 }
 
@@ -468,6 +468,7 @@ body {
 
 .card-section > a:hover {
   box-shadow: 0 0 30px #d3d3d3;
+  z-index: 1;
 }
 
 .cards-row-head > a {
@@ -634,7 +635,7 @@ body {
 
 .card-long:hover {
   box-shadow: 2px 2px 10px 2px rgb(190, 190, 190);
-  z-index: 999;
+  z-index: 1;
 }
 .top {
   align-items: center;
@@ -656,7 +657,8 @@ body {
   margin: 2px 2px 0px 0px;
 }
 .newCards:hover {
-  box-shadow: 2px 2px 10px 2px grey;
+  box-shadow: 2px 2px 10px 2px rgb(189, 182, 182);
+  z-index: 1;
 }
 .newCards > a:hover {
   text-decoration: none;
