@@ -44,7 +44,7 @@ body {
   display: flex;
   list-style-type: none;
   color: black;
-  margin: 0px 140px 60px 0px;
+  margin: 0px 0px 60px 0px;
 }
 
 .topnav ul li {
@@ -677,8 +677,8 @@ body {
   justify-content: center;
 }
 .card-sq > .bottom > img {
-  width: 100px;
-  height: 100px;
+  width: 50%;
+  height: 50%;
 }
 
 .bottom > img {
@@ -688,6 +688,7 @@ body {
 
 .newCards {
   width: 20%;
+  min-width: 50px;
   height: 300px;
   padding: 2px;
   color: black;
@@ -739,4 +740,20 @@ body {
 .main-descript {
   color: black !important;
   text-decoration-style: none;
+}
+
+@media all and (max-width: 993px) {
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .last > .card-section > a {
+    margin: 10px 0px;
+  }
+
+  .row-content > .row > .newCards {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
